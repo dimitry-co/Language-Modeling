@@ -46,6 +46,6 @@ capitalization and pad each sentence as described above). Please list all of the
 eters required to compute the probabilities and show the complete calculation. Which
 of the parameters have zero values under each model? Use log base 2 in your calcula-
 tions. Map words not observed in the training corpus to the \<unk> token.
-• I look forward to hearing your reply .
+    - I look forward to hearing your reply .
 6. Compute the perplexity of the sentence above under each of the models.
 7. Compute the perplexity of the entire test corpus under each of the models.
