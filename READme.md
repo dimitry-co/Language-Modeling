@@ -1,3 +1,6 @@
+# Language Modeling
+This project trains a unigram, bigram and a bigram with add-one smoothing language models and evaluates them on a test corpora. 
+
 ## How to Run
 
 1. The files ``preprocessing.py``, ``modelling.py``, ``questions.py`` and the two corpora (``train-Spring2023.txt``, ``test.txt``) must be in your current directory.
@@ -9,7 +12,10 @@
 4. ``output.txt`` containd the answers to the questions
 
 ## Corpora
-Each corpus is a collection of texts, one sentence per line. _Brown-train.txt_ contains 26,000 sentences from the Brown corpus. This corpus was used to train the language models. The test corpora ( _brown-test.txt_ and _learner-test.txt_ ) were used to evaluate the language models that were trained. _brown-test.txt_ is a collection of sentences from the Brown corpus, different from the training data, and _learner-test.txt_ are essays written by non-native writers of English that are part of the FCE Corpus.
+Each file is a collection of texts, one sentence per line. train.txt contains about 100,000 sen-
+tences from the NewsCrawl corpus. You will use this corpus to train the language models.
+The test corpus test.txt is from the same domain and will be used to evaluate the language
+models that you trained.
 
 ## PRE-PROCESSING
 Prior to training, please complete the following pre-processing steps:
