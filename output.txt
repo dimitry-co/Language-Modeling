@@ -1,0 +1,101 @@
+Question 1
+Number of word types in training corpus excluding the <s> symbol: 41738
+
+Question 2.
+Total number of word tokens in the training corpus excluding <s> symbol: 2468210
+
+Question 3.
+Percentage of word tokens in test corpus that did not occur in the training: 1.66%
+Percentage of word types in test corpus that did not occur in the training: 3.61%
+
+Question 4.
+Percentage of bigram tokens in test corpus that did not occur in the training: 20.96%
+Percentage of bigram types in test corpus that did not occur in the training: 25.32%
+
+Questions 5 and 6:
+the sentence: I look forward to hearing your reply . 
+
+model: Unigram
+The computing sentence:	['i', 'look', 'forward', 'to', 'hearing', 'your', 'reply', '.', '</s>']
+
+Parameters required to compute the log probability:
+         probabilities
+i             0.002973
+look          0.000248
+forward       0.000192
+to            0.021492
+hearing       0.000085
+your          0.000493
+reply         0.000005
+.             0.035610
+</s>          0.040515
+
+The log base 2 of the probabilities of each word:
+          log prob
+i        -8.393666
+look    -11.975290
+forward -12.346290
+to       -5.540023
+hearing -13.527675
+your    -10.985920
+reply   -17.534594
+.        -4.811557
+</s>     -4.625393
+
+The log probability of the sentence: -89.74040857086109
+The perplexity of the sentence: 1003.7306831109403
+
+model: Bigram mle
+The Computing sentence:	['<s>', 'i', 'look', 'forward', 'to', 'hearing', 'your', 'reply', '.', '</s>']
+
+bigrams required to compute the log probability:
+                 probabilities
+(<s>, i)              0.020060
+(i, look)             0.002044
+(look, forward)       0.055465
+(forward, to)         0.210970
+(to, hearing)         0.000113
+(hearing, your)       0.000000
+(your, reply)         0.000000
+(reply, .)            0.000000
+(., </s>)             0.943045
+
+The log probability is undefined for the following bigrams that are unseen in the bigram model:
+"hearing your"
+"your reply"
+"reply ."
+
+model: Bigram Add-One
+The Computing sentence:	['<s>', 'i', 'look', 'forward', 'to', 'hearing', 'your', 'reply', '.', '</s>']
+
+bigrams required to compute the log probability:
+                 probabilities
+(<s>, i)              0.014160
+(i, look)             0.000326
+(look, forward)       0.000826
+(forward, to)         0.002393
+(to, hearing)         0.000074
+(hearing, your)       0.000024
+(your, reply)         0.000023
+(reply, .)            0.000024
+(., </s>)             0.639413
+
+The log base 2 of each bigram probability:
+                 log prob.
+(<s>, i)         -6.142052
+(i, look)       -11.582789
+(look, forward) -10.240859
+(forward, to)    -8.707188
+(to, hearing)   -13.725047
+(hearing, your) -15.356314
+(your, reply)   -15.390572
+(reply, .)      -15.349558
+(., </s>)        -0.645180
+
+The bigram log probability of the sentence: -97.13956016607362
+The perplexity of the sentence: 839.83145676326
+
+Question 7:
+The perplexity of the test corpus under the Unigram model: 1097.1903087439796
+Perplexity of test corpus under the Bigram MLE model: undefined
+Perplexity of test corpus under the Bigram Add-One model: 1127.3038051779124
