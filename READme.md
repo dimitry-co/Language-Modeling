@@ -9,7 +9,7 @@ This project trains a unigram, bigram and a bigram with add-one smoothing langua
     * ``output.txt`` has the answers to the questions below
     * ``train-pp.txt`` has the preprocessed Brown training corpus.
     * ``test-pp.txt`` has the preprocessed Brown test corpus.
-4. ``output.txt`` containd the answers to the questions
+4. ``output.txt`` contains the answers to the questions
 
 ## Corpora
 Each file is a collection of texts, one sentence per line. train.txt contains about 100,000 sen-
